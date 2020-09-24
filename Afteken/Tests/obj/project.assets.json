@@ -1,0 +1,81 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BAI - Aftekenopdracht1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/BAI - Aftekenopdracht1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BAI - Aftekenopdracht1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BAI - Aftekenopdracht1/1.0.0": {
+      "type": "project",
+      "path": "../BAI - Aftekenopdracht1/BAI - Aftekenopdracht1.csproj",
+      "msbuildProject": "../BAI - Aftekenopdracht1/BAI - Aftekenopdracht1.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "BAI - Aftekenopdracht1 >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\David\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\David\\OneDrive\\Desktop\\BaiAftekenopdracht\\Tests\\Tests.csproj",
+      "projectName": "Tests",
+      "projectPath": "C:\\Users\\David\\OneDrive\\Desktop\\BaiAftekenopdracht\\Tests\\Tests.csproj",
+      "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\David\\OneDrive\\Desktop\\BaiAftekenopdracht\\Tests\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\David\\OneDrive\\Desktop\\BaiAftekenopdracht\\BAI - Aftekenopdracht1\\BAI - Aftekenopdracht1.csproj": {
+              "projectPath": "C:\\Users\\David\\OneDrive\\Desktop\\BaiAftekenopdracht\\BAI - Aftekenopdracht1\\BAI - Aftekenopdracht1.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}
