@@ -1,0 +1,13 @@
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\bin\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.exe
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\bin\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.deps.json
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\bin\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.runtimeconfig.json
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\bin\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.runtimeconfig.dev.json
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\bin\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.dll
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\bin\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.pdb
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\obj\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.csprojAssemblyReference.cache
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\obj\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.AssemblyInfoInputs.cache
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\obj\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.AssemblyInfo.cs
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\obj\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.csproj.CoreCompileInputs.cache
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\obj\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.dll
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\obj\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.pdb
+C:\Users\David\OneDrive\Desktop\Afteken\BAI - Aftekenopdracht1\obj\Debug\netcoreapp3.1\BAI - Aftekenopdracht1.genruntimeconfig.cache

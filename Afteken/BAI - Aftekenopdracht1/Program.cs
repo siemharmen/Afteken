@@ -13,30 +13,61 @@ namespace BAI
         /// <param name="lijst">De lijst die wordt doorlopen
         /// (wordt in functie veranderd)</param>
         /// ------------------------------------------------------------
+        /// 
+       
+
+
         public static void Opdr1FilterList(List<int> lijst)
         {
-            // *** IMPLEMENTATION HERE *** //
+             Dictionary<int, int> dict = new Dictionary<int, int>();
+            foreach(int i in lijst)
+            {
+                try
+                {
+                    dict.Add(i, 1);         
+                }
+                catch (ArgumentException)
+                {
+                    dict[i] = dict[i] + 1;  
+                }
+            }
+
+            foreach (KeyValuePair<int, int> kvp in dict)
+            {
+                Console.WriteLine($"{kvp.Key} = {kvp.Value}");
+            }
+
+            foreach (KeyValuePair<int, int> kvp in dict)
+            {
+                if (kvp.Value < 2) {
+                    lijst.Remove(kvp.Key);
+                }
+            }
+            
         }
 
+        
 
-        /// ------------------------------------------------------------
-        /// <summary>
-        /// Maakt een queue van de getallen 1 t/m 50 (in die volgorde
-        /// toegevoegd)
-        /// </summary>
-        /// <returns>Een queue met hierin 1, 2, 3, .., 50</returns>
-        /// ------------------------------------------------------------
-        public static Queue<int> Opdr2aQueue50()
+
+    /// ------------------------------------------------------------
+    /// <summary>
+    /// Maakt een queue van de getallen 1 t/m 50 (in die volgorde
+    /// toegevoegd)
+    /// </summary>
+    /// <returns>Een queue met hierin 1, 2, 3, .., 50</returns>
+    /// ------------------------------------------------------------
+    public static Queue<int> Opdr2aQueue50()
         {
             Queue<int> q = new Queue<int>();
 
             // *** IMPLEMENTATION HERE *** //
-
+            for (int i = 1; i < 51; i++)
+            {
+                q.Enqueue(i);
+            }
             return q;
         }
-
-
-        /// ------------------------------------------------------------
+                /// ------------------------------------------------------------
         /// <summary>
         /// Haalt alle elementen uit een queue. Voegt elk element dat
         /// deelbaar is door 4 toe aan een stack
@@ -47,9 +78,23 @@ namespace BAI
         /// ------------------------------------------------------------
         public static Stack<int> Opdr2bStackFromQueue(Queue<int> queue)
         {
+            Console.WriteLine();
             Stack<int> stack = new Stack<int>();
 
-            // *** IMPLEMENTATION HERE *** //
+            while (queue.Count > 0)
+            {
+                int a = queue.Dequeue();
+                if (a%4==0)
+                {
+                    stack.Push(a);
+                }
+
+                
+            }
+            foreach (int i in stack)
+            {
+                Console.Write(i+"-");
+            }
 
             return stack;
         }
@@ -65,8 +110,32 @@ namespace BAI
         /// ------------------------------------------------------------
         public static Stack<int> Opdr3RandomNumbers(int lower, int upper, int count)
         {
-            Stack<int> stack = new Stack<int>();
 
+            Dictionary<int, int> dict = new Dictionary<int, int>();
+            Stack<int> stack = new Stack<int>();
+            Random rnd = new Random();
+            while (dict.Count < count)
+            {
+                int nummer = rnd.Next(lower,upper);
+
+                try
+                {
+                    dict.Add(nummer, 1);         //  toevoegen
+                    
+                }
+                catch (ArgumentException)
+                {
+                    dict[nummer] = dict[nummer] + 1;  //  update
+                }
+
+                //stack.Push(nummer);
+
+            }
+            foreach (KeyValuePair<int, int> kvp in dict)
+            {
+               // Console.WriteLine($"{kvp.Key} = {kvp.Value}");
+                stack.Push(kvp.Key);
+            }
             // *** IMPLEMENTATION HERE *** //
 
             return stack;
@@ -95,6 +164,7 @@ namespace BAI
             Queue<int> queue;
             Stack<int> stack;
 
+
             Console.WriteLine();
             Console.WriteLine("=== Opdracht 1 : FilterList ===");
             list = new List<int>() { 1, 3, 5, 7, 3, 8, 9, 5 };
@@ -116,6 +186,9 @@ namespace BAI
             stack = Opdr3RandomNumbers(10, 15, 6);
             PrintEnumerable(stack);
             stack = Opdr3RandomNumbers(10_000, 50_000, 40_001);
+
+            Console.ReadLine();
         }
+        
     }
 }
