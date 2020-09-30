@@ -109,32 +109,19 @@ namespace BAI
         /// <returns>De stack met unieke random getallen</returns>
         /// ------------------------------------------------------------
         public static Stack<int> Opdr3RandomNumbers(int lower, int upper, int count)
-        {
-
+        {        
             Dictionary<int, int> dict = new Dictionary<int, int>();
             Stack<int> stack = new Stack<int>();
+            int nummer;
             Random rnd = new Random();
-            while (dict.Count < count)
+            while (stack.Count < count)
             {
-                int nummer = rnd.Next(lower,upper);
-
-                try
+                nummer = rnd.Next(lower,upper + 1);
+                if (!dict.ContainsKey(nummer))
                 {
-                    dict.Add(nummer, 1);         //  toevoegen
-                    
-                }
-                catch (ArgumentException)
-                {
-                    dict[nummer] = dict[nummer] + 1;  //  update
-                }
-
-                //stack.Push(nummer);
-
-            }
-            foreach (KeyValuePair<int, int> kvp in dict)
-            {
-               // Console.WriteLine($"{kvp.Key} = {kvp.Value}");
-                stack.Push(kvp.Key);
+                    dict.Add(nummer, 1);
+                    stack.Push(nummer);
+                }           
             }
             // *** IMPLEMENTATION HERE *** //
 
@@ -185,9 +172,9 @@ namespace BAI
             PrintEnumerable(stack);
             stack = Opdr3RandomNumbers(10, 15, 6);
             PrintEnumerable(stack);
-            stack = Opdr3RandomNumbers(10_000, 50_000, 40_001);
-
-            Console.ReadLine();
+            //stack = Opdr3RandomNumbers(10_000, 50_000, 40_001);
+            //PrintEnumerable(stack);
+            //Console.ReadLine();
         }
         
     }
